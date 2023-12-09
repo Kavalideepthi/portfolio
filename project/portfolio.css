@@ -1,0 +1,144 @@
+html{
+    scroll-behavior: smooth;
+    background-color:white;
+
+}
+body{
+    color:rgb(12, 12, 2);
+}
+#sample img{
+    border-radius: 20px;
+    border:7px double orange;
+    box-shadow:5px 5px 5px black;
+}
+#sample img{
+    transform: rotate(-5deg);
+}
+#sample img:hover{
+    transform: rotate(-5deg);
+}
+.wrapper{
+    display: flex;
+
+    justify-content:center;
+}
+#header ul li{
+    list-style: none;
+    display:inline-block;
+    margin:20px;
+}
+.container{
+    display:grid;
+    grid-template-rows: 15vh 55vh 1fr 0.5fr 35vh;
+    grid-template-columns:repeat(4,1fr);
+    gap: 3%;
+    grid-template-areas:
+    "img head head head"
+    "obj obj profile profile"
+    "project project pro pro"
+    "work work co co"
+    "con con con con";
+    width:70vw;
+
+    padding:20px;
+}
+#footer{
+    grid-area: foot;
+    text-align: center;
+}
+#code {
+    grid-area: co;
+}
+#sample {
+    grid-area: project;
+    text-align: center;
+}
+#image{
+    grid-area: img;
+    text-align: center;
+    box-shadow: 8px 8px 8px rgb(203, 114, 181);
+    border-radius: 50%;
+
+#header{
+grid-area: head;
+display: flex;
+justify-content: center;
+align-items: center;
+border: 2px solid brown;
+box-shadow: 5px 5px 5px pink;
+background-image: linear-gradient(
+    to left,
+    black,
+    skyblue
+    );
+}
+#obj {
+    grid-area: obj;
+    border-radius: 15px;
+    background-image: linear gradient(to left,whitesmoke,pink);
+    color:black;
+    box-shadow: 5px 5px 5px red;
+    border: 2px solid black;
+}
+#profile{
+    grid-area: profile;
+    text-align: center;
+    border-radius: 50%;
+    box-shadow: 5px 5px 5px orange;
+
+}
+#profile img{
+    border-radius:24px;
+}
+#project {
+    grid-area:pro;
+    border-radius: 15px;
+    background-image: linear-gradient(to left ,
+    black,
+    pink);
+}
+#wor{
+    grid-area: work;
+    border-radius: 15px;
+    background-image: linear-gradient(
+        to left,
+        black,
+        orange
+    );
+    color: black;
+    box-shadow: 5px 5px 5px purple;
+}
+#contact {
+    grid-area: con;
+    text-align: center;
+    background-image: linear-gradient(black,rgb(238, 255, 0));
+    border: 2px solid white;
+    box-shadow: 5px 5px 5px pink;
+}
+.box {
+    border-radius: 20px;
+    padding: 10px;
+
+}
+a {
+    color: black;
+    font-weight: bold;
+    font-size: larger;
+    font-style: italic;
+}
+a:hover {
+    color: pink;
+}
+#contact a{
+    margin-left: 30px;
+
+
+}
+h2 {
+    text-decoration: dotted;
+    font-family: "Segeo UI",'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h3{
+    color: burlywood;
+    font-style: italic;
+}
